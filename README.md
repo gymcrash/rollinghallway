@@ -11,4 +11,4 @@ backwards looping is a simple extension of forwards looping left as an excercise
 
 Finally, I've used ProBuilder (free with Unity) to build the simple hallways, so you might need to have that package installed. 
 
-![Infinite hallways](https://i.imgur.com/tLjyuTw.mp4)
+Heres a link to an imgur mp4 of it in action (https://i.imgur.com/tLjyuTw.mp4)

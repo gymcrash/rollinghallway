@@ -40,6 +40,17 @@ public class PlayerWalkControl : MonoBehaviour
             this.stabalisePositionAndRecordHistory();
         }
 
+        if (UnityEngine.Input.GetKey(KeyCode.A))
+        {
+            this.transform.Translate(-0.05f, 0, 0);
+            this.stabalisePositionAndRecordHistory();
+        }
+        else if (UnityEngine.Input.GetKey(KeyCode.D))
+        {
+            this.transform.Translate(0.05f, 0, 0);
+            this.stabalisePositionAndRecordHistory();
+        }
+
     }
 
     private void stabalisePositionAndRecordHistory()

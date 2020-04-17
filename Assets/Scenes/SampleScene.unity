@@ -19,14 +19,14 @@ RenderSettings:
   m_FogMode: 1
   m_FogDensity: 0.01
   m_LinearFogStart: 0
-  m_LinearFogEnd: 40
+  m_LinearFogEnd: 30
   m_AmbientSkyColor: {r: 0, g: 0.007843138, b: 0.019607844, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.99
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7ad5aac025590834ba09aeff1793a7c0, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.71
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3161841, g: 0.32279122, b: 0.30370596, a: 0.71}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -256,10 +256,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hallwayPrefabs:
-  - {fileID: 1388726158150064478, guid: faa8b23ea2ec6934fa47c7d806e6bdd1, type: 3}
-  - {fileID: 7437934572309369297, guid: 96150ed228606a34791e8981c0bdff53, type: 3}
-  - {fileID: 610419978131770176, guid: 26e9724db81486c48b2e9dad10a541fe, type: 3}
-  - {fileID: 7437934572309369297, guid: 96150ed228606a34791e8981c0bdff53, type: 3}
+  - {fileID: 1423887837769121771, guid: faa8b23ea2ec6934fa47c7d806e6bdd1, type: 3}
+  - {fileID: 1423887837769121771, guid: faa8b23ea2ec6934fa47c7d806e6bdd1, type: 3}
+  - {fileID: 1423887837769121771, guid: faa8b23ea2ec6934fa47c7d806e6bdd1, type: 3}
   player: {fileID: 1106652762}
   lastDoorBillboard: {fileID: 68957139}
 --- !u!1 &963194225
@@ -301,7 +300,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.32498217, g: 0.4444073, b: 0.6320754, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -443,6 +442,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1106652762}
   - component: {fileID: 1106652763}
+  - component: {fileID: 1106652765}
+  - component: {fileID: 1106652764}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -477,3 +478,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e2e0d5f5d80c04a84f92c60ce2c923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1106652764
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106652761}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 68
+  m_CollisionDetection: 0
+--- !u!135 &1106652765
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106652761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
